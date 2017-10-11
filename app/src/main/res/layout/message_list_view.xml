@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/messageUserImage"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@drawable/dark19" />
+
+    <TextView
+        android:id="@+id/messageUserNameLbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toEndOf="@+id/messageUserImage"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="VishBN" />
+
+    <TextView
+        android:id="@+id/timeStampLbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toEndOf="@+id/messageUserNameLbl"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Oct 11,14:30 PM" />
+
+    <TextView
+        android:id="@+id/messageBodyLbl"
+        android:layout_width="244dp"
+        android:layout_height="148dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="116dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/messageUserImage"
+        app:layout_constraintTop_toBottomOf="@+id/timeStampLbl"
+        app:layout_constraintVertical_bias="1.0"
+        tools:text="Comme convenu suite à notre échange téléphonique, je vous confirme notre intérêt de vous recevoir en entretien pour le poste de développeur mobile. Je vous propose donc un RDV le 11 Octobre 2017 à 14h00 dans nos locaux de Rueil-Malmaison (280, avenue Napoléon Bonaparte_92500 Rueil Malmaison)" />
+</android.support.constraint.ConstraintLayout>
